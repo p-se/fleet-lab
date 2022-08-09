@@ -39,7 +39,6 @@ ingress:
   hosts:
     - "monitoring.olblak.com"
   path: /grafana/?(.*)
-  pathType: prefix
   tls:
     - secretName: "grafana-olblak-com-tls"
       hosts:
