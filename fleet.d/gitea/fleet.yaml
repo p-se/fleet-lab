@@ -8,7 +8,7 @@ defaultNamespace: gitea
 # All resources will be assigned to this namespace and if any cluster scoped
 # resource exists the deployment will fail.
 # Default: ""
-namespace: gitea
+# namespace: ""
 
 helm:
   # Use a custom location for the Helm chart. This can refer to any go-getter URL.
