@@ -1,0 +1,15 @@
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    cert-manager.io/cluster-issuer: "ovh-issuer"
+  hosts:
+    - host: git.olblak.com
+      paths:
+        - path: /
+          pathType: Prefix
+  tls:
+    - secretName: git-olblak-com-tls
+      hosts:
+        - git.olblak.com
+
