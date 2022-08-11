@@ -30,17 +30,15 @@ dashboards:
 
 ingress:
   annotations:
-    kubernetes.io/ingress.class: "nginx"
-    nginx.ingress.kubernetes.io/rewrite-target: /$1
-    nginx.ingress.kubernetes.io/use-regex: "true"
+    kubernetes.io/ingress.class: "traefik"
     kubernetes.io/tls-acme: "true"
     cert-manager.io/cluster-issuer: "ovh-issuer"
   enabled: true
   hosts:
     - "monitoring.olblak.com"
-  path: /grafana/?(.*)
+  path: /grafana
   tls:
-    - secretName: "grafana-olblak-com-tls"
+    - secretName: "monitoring-olblak-com-tls"
       hosts:
         - monitoring.olblak.com
 
