@@ -44,4 +44,6 @@ ingress:
 
 grafana.ini:
   server:
-    root_url: http://localhost:3000/grafana # this host can be localhost
+    domain: monitoring.olblak.com
+    root_url: "%(protocol)s://%(domain)s/grafana"
+    serve_from_sub_path: true
