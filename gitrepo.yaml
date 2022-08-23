@@ -9,4 +9,4 @@ spec:
   repo: "https://github.com/olblak/fleet-lab"
   branch: main
   paths:
-  - fleet.d/*
+  - fleet.d
