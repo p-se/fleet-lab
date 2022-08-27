@@ -4,12 +4,10 @@
 # in the manifests.
 # Default: default
 defaultNamespace: gitea
-
 # All resources will be assigned to this namespace and if any cluster scoped
 # resource exists the deployment will fail.
 # Default: ""
 # namespace: ""
-
 helm:
   # Use a custom location for the Helm chart. This can refer to any go-getter URL.
   # This allows one to download charts from most any location.  Also know that
@@ -25,7 +23,7 @@ helm:
   releaseName: gitea
   # The version of the chart or semver constraint of the chart to find. If a constraint
   # is specified it is evaluated each time git changes.
-  version: 5.0.9
+  version: 6.0.0
   # Any values that should be placed in the `values.yaml` and passed to helm during
   # install.
   #values:
