@@ -3,7 +3,7 @@ title: Autodiscovery
 autodiscovery:
   groupby: individual
   scmid: default
-  pullrequest: default
+  pullrequestid: default
   crawlers:
     helm:
       enabled: true
