@@ -23,7 +23,7 @@ helm:
   releaseName: gitea
   # The version of the chart or semver constraint of the chart to find. If a constraint
   # is specified it is evaluated each time git changes.
-  version: 6.0.0
+  version: 6.0.1
   # Any values that should be placed in the `values.yaml` and passed to helm during
   # install.
   #values:
