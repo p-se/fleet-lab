@@ -6,3 +6,6 @@ ingress:
     kubernetes.io/tls-acme: "true"
     cert-manager.io/cluster-issuer: "ovh-issuer"
 
+epinio-ui:
+  ingress:
+    enabled: true
