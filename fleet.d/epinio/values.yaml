@@ -1,6 +1,7 @@
 global:
   domain: olblak.com
 ingress:
+  ingressClassName: "traefik"
   annotations:
     kubernetes.io/ingress.class: traefik
     kubernetes.io/tls-acme: "true"
