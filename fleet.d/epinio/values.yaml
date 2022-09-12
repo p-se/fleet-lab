@@ -1,5 +1,6 @@
 global:
   domain: olblak.com
+  tlsIssuer: "ovh-issuer"
 ingress:
   ingressClassName: "traefik"
   annotations:
