@@ -28,7 +28,7 @@ datasources:
 grafana.ini:
   server:
     domain: monitoring.olblak.com
-    root_url: "%(protocol)s://%(domain)s/grafana"
+    root_url: "%(protocol)s://%(domain)s/"
     serve_from_sub_path: true
 
 ingress:
@@ -39,7 +39,7 @@ ingress:
   enabled: true
   hosts:
     - "monitoring.olblak.com"
-  path: /grafana
+  path: /
   tls:
     - secretName: "monitoring-olblak-com-tls"
       hosts:
