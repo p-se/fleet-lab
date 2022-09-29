@@ -6,7 +6,7 @@ metadata:
   namespace: fleet-local
 spec:
   # Everything from this repo will be ran in this cluster. You trust me right?
-  repo: "https://github.com/olblak/fleet-lab"
+  repo: "https://github.com/p-se/fleet-lab"
   branch: main
   paths:
   - fleet.d
